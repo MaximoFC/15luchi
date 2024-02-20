@@ -1,18 +1,16 @@
 :root {
-    --text: #150d12;
-    --background: #fbf7f9;
-    --primary: #b36597;
-    --secondary: #d295bc;
-    --accent: #ca6fa9;
+    --background: #E5B3FE;
+    --primary: #E5B3FE;
+    --acent: #D8BBFF;
+    --text: rgb(34, 20, 71);
 }
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: var(--background);
-    text-shadow: 2px 2px 4px var(--text);
-    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-family: 'Raleway';
 }
 
 html {
@@ -38,18 +36,16 @@ body video{
 
 a {
     height: 50px;
-    background-color: var(--accent);
+    background-color: var(--acent);
     width: 200px;
     border-radius: 10px;
-    border: 2px solid var(--primary);
     text-decoration: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
     text-shadow: 2px 2px 4px var(--text) !important;
-    font-family: "Playfair Display", serif !important;
-    color: var(--background) !important;
-    box-shadow: 0px 5px 5px var(--primary);
+    color: var(--text) !important;
+    box-shadow: 0px 5px 5px #af37ebab;
     cursor: pointer;
 }
 
@@ -69,12 +65,13 @@ a {
 }
 
 header {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: sticky;
     z-index: 0;
     top: 0;
+    height: 100vh;
 }
 
 #title {
@@ -90,7 +87,7 @@ header {
 #flecha {
     animation: jump 2s ease-in-out infinite;
     position: relative;
-    margin-top: -60px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
@@ -101,7 +98,7 @@ header {
 }
 
 main {
-    background-color: #d295bca1;
+    background-color: #e5b3feab;
     text-align: center;
     z-index: 2;
     backdrop-filter: blur(3px);
@@ -119,14 +116,14 @@ main {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    color: var(--background);
+    color: var(--text);
 }
 
 span {
     font-weight: bold;
     font-style: oblique;
-    color: var(--background);
-    text-decoration: underline var(--primary);
+    color: var(--text);
+    text-decoration: underline var(--text);
 }
 
 /* SECCIÓN CALENDARIO */
@@ -154,13 +151,13 @@ span {
     font-size: 50px;
     margin-bottom: 40px;
     font-weight: bold;
-    text-decoration: underline var(--primary);
+    text-decoration: underline var(--text);
 }
 
 .tags {
     border-radius: 10px;
-    background-color: var(--secondary);
-    box-shadow: 0px 5px 5px var(--primary);
+    background-color: var(--acent);
+    box-shadow: 0px 5px 5px #af37ebab;
 }
 
 /* SECCIÓN SALÓN */
@@ -180,7 +177,7 @@ span {
 }
 
 .room-buttons {
-    height: 130px;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -189,7 +186,7 @@ span {
 
 .party-room iframe{
     border-radius: 10px;
-    box-shadow: 0px 5px 5px var(--primary);
+    box-shadow: 0px 5px 5px #af37ebab;
 }
 
 /* SECCIÓN REGALOS */
@@ -260,6 +257,11 @@ span {
     height: 90vh;
 }
 
+.final-container h2 {
+    color: white;
+    font-weight: bold;
+}
+
 #contact {
     margin: 0;
     padding: 0;
@@ -267,6 +269,8 @@ span {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    font-weight: bold;
+    color: white !important;
 }
 /* ANIMACIONES */
 

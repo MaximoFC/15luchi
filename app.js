@@ -1,5 +1,5 @@
 // Fecha del evento
-const eventDate = new Date('Feb 17, 2024 22:00:00');
+const eventDate = new Date('Mar 16, 2024 22:00:00');
 
 function countdown(){
     // Fecha actual
